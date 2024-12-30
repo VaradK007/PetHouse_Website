@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pet Store</h1>
+    </header>
+
+    <main>
+        <section class="pet-category">
+            <h2>Dogs</h2>
+            <div class="pet-list">
+                <div class="pet-card">
+                    <img src="./images/dog.3.webp" alt="Bulldog">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> D001</p>
+                        <p><strong>Name:</strong> Max</p>
+                        <p><strong>Breed:</strong> Bulldog</p>
+                        <p><strong>Price:</strong> $500</p>
+                    </div>
+                </div>
+                
+                <div class="pet-card">
+                    <img src="./images/dog.png" alt="Golden Retriever">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> D002</p>
+                        <p><strong>Name:</strong> Buddy</p>
+                        <p><strong>Breed:</strong> Golden Retriever</p>
+                        <p><strong>Price:</strong> $700</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="./images/dog.4.jpg" alt="Bulldog">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> D003</p>
+                        <p><strong>Name:</strong> jak</p>
+                        <p><strong>Breed:</strong> Labrador Retriever</p>
+                        <p><strong>Price:</strong> $500</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="./images/dog.2.webp" alt="Bulldog">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> D001</p>
+                        <p><strong>Name:</strong> oggay</p>
+                        <p><strong>Breed:</strong> German Shepherd</p>
+                        <p><strong>Price:</strong> $500</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pet-category">
+            <h2>Cats</h2>
+            <div class="pet-list">
+                <div class="pet-card">
+                    <img src="./images/persian.jpg" alt="Persian Cat">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> C001</p>
+                        <p><strong>Name:</strong> Whiskers</p>
+                        <p><strong>Breed:</strong> Persian</p>
+                        <p><strong>Price:</strong> $400</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <img src="./images/maine coon.webp" alt="Maine Coon">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> C002</p>
+                        <p><strong>Name:</strong> Luna</p>
+                        <p><strong>Breed:</strong> Maine Coon</p>
+                        <p><strong>Price:</strong> $600</p>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="./images/himalayan cat.jpg" alt="Maine Coon">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> C002</p>
+                        <p><strong>Name:</strong> Luna</p>
+                        <p><strong>Breed:</strong> himalayan</p>
+                        <p><strong>Price:</strong> $600</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pet-category">
+            <h2>Birds</h2>
+            <div class="pet-list">
+                <div class="pet-card">
+                    <img src="./images/dog.png" alt="Parrot">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> B001</p>
+                        <p><strong>Name:</strong> Kiwi</p>
+                        <p><strong>Breed:</strong> Parrot</p>
+                        <p><strong>Price:</strong> $300</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <img src="./images/dog.png" alt="Canary">
+                    <div class="pet-info">
+                        <p><strong>Pet Code:</strong> B002</p>
+                        <p><strong>Name:</strong> Sunny</p>
+                        <p><strong>Breed:</strong> Canary</p>
+                        <p><strong>Price:</strong> $150</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adopt Me Section -->
+        <section class="adopt-section">
+            <h2>Adopt Me</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required placeholder="Enter your address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="animal-code">Animal You Want to Adopt (Code):</label>
+                    <input type="text" id="animal-code" name="animal_code" required placeholder="Enter pet code (e.g., D001)">
+                </div>
+                <div class="form-group">
+                    <label for="animal-name">Animal Name:</label>
+                    <input type="text" id="animal-name" name="animal_name" required placeholder="Enter pet name (e.g., Max)">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Pet Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
